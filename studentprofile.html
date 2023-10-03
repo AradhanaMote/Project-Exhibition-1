@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="css/studentprofile.css">
 </head>
 <body>
-    <p>This is made by Aradhana</p>
+    <header>
+        Student Profile
+    </header>
+    <div class="container">
+      <form method="post" id = "studentprofile">
+        <div class="fields">
+          <div class="field">
+            <label for="">First name</label>
+            <input type="text" placeholder="First name" name="fname" >
+          </div>
+
+          <div class="field">
+            <label for="">Last name</label>
+            <input type="text" placeholder="Last name" name="lname" >
+          </div>
+        </div>
+        <div class="field">
+          <label for="">email address</label>
+          <input type="text" placeholder="email address" name="email" >
+        </div>
+        <div class="field">
+          <label for="">Age</label>
+          <input type="text" placeholder="Age" name="Age">
+        </div>
+
+        <div class="field">
+          <label for="">Gender</label>
+          <input type="text" placeholder="Gender" name="Gender">
+        </div>
+
+        <div class="field">
+          <label for="">Name of the University</label>
+          <input type="text" placeholder="Name of the University" name="Name">          
+        </div>
+
+        <div class="fields">
+          <div class="field">
+            <label for="">New password</label>
+            <input type="password" placeholder="new password" name="password">
+          </div>
+
+          <div class="field">
+            <label for="">Confirm password</label>
+            <input type="password" placeholder="confirm password" name="cpassword">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="">Date of Birth</label>
+          <input type="date" name="dob">
+        </div>
+        <div class="field">
+          <input type="file" name="image">
+        </div>
+        <button type="submit" name="submit">Submit</button>
+        <p>Have an account? <a href = "#">Sign in</a></p>
+      </form>
+    </div>
 </body>
 </html>
