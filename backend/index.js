@@ -1,4 +1,5 @@
 const express = require("express");
+const userRoute = require('./routes/user');
 
 const userRouter = require("./routes/student");
 const { connectMongoDB } = require("./connection");
@@ -14,5 +15,7 @@ connectMongoDB("mongodb://127.0.0.1:27017/testing").then(() => {
 app.use(express.urlencoded({ extended: false }));
 app.use(log("log.txt"));
 app.use("/users", userRouter);
+app.use("/user", userRoute);
+
 
 app.listen(PORT, () => console.log(`Server Started! at PORT: ${PORT}`));
